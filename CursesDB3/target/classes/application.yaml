@@ -1,0 +1,29 @@
+
+clickhouse:
+  host: localhost
+  port: 8123
+  database: measurement
+  user: default
+  password:
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: test-kafka
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: Kafka2.CustomDeSerializer.CustomDeserializer
+
+    producer:
+      bootstrap-servers: localhost:9092
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: Kafka2.CustomDeSerializer.CustomSerializer
+
+topic:
+  name:
+    producer: topic-test-1
+    consumer: topic-test-1
+
+server:
+  port: 8080

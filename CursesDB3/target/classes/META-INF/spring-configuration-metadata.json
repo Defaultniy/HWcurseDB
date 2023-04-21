@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "clickhouse",
+      "type": "ClickHouse.config.ClickHouseProperties",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "clickhouse.database",
+      "type": "java.lang.String",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    },
+    {
+      "name": "clickhouse.host",
+      "type": "java.lang.String",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    },
+    {
+      "name": "clickhouse.password",
+      "type": "java.lang.String",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    },
+    {
+      "name": "clickhouse.port",
+      "type": "java.lang.String",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    },
+    {
+      "name": "clickhouse.user",
+      "type": "java.lang.String",
+      "sourceType": "ClickHouse.config.ClickHouseProperties"
+    }
+  ],
+  "hints": []
+}
